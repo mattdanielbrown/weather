@@ -39,12 +39,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  @import "../assets/scss/variables";
   .weather-list {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0;
+    @include bp(mobile) {
+      padding: 25px 0;
+    }
   }
 </style>
